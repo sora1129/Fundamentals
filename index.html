@@ -6,8 +6,18 @@
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-       
-
-        <script src="https://unpkg.com/vue"></script>
+       <div id="shopping-list">
+				 <h1>{{ header }}</h1>
+				 <input type="text" v-model="header">
+			 </div>
+			 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+				<script>
+				 var shoppingList =	new Vue ({
+						el: '#shopping-list',
+						data: {
+							header: 'Vue is ready to party!'
+						}
+					})
+				</script>
     </body>
 </html>
